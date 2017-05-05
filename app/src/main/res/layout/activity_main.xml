@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/botttom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <com.shenzhen.socialcontact.alwayschat.widget.BottomMenu
+            android:id="@+id/botttom_home_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:image_normal="@drawable/ic_main_home_normol"
+            app:image_selected="@drawable/ic_main_home_selected"
+            app:text="首页"
+            app:text_color_normal="#30009688"
+            app:text_color_selected="@color/material_deep_teal_500"/>
+
+        <ImageView
+            android:id="@+id/directseeding_iv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_main_live_selected"/>
+
+        <com.shenzhen.socialcontact.alwayschat.widget.BottomMenu
+            android:id="@+id/botttom_mine_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:image_normal="@drawable/ic_main_mine_normol"
+            app:image_selected="@drawable/ic_main_mine_selected"
+            app:text="我的"
+            app:text_color_normal="#30009688"
+            app:text_color_selected="@color/material_deep_teal_500"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/botttom_ll"/>
+
+</RelativeLayout>
